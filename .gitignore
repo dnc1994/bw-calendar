@@ -1,1 +1,18 @@
+# Dependency directories
+node_modules/
+
+# Build artifacts
+main.js
+styles.css
+
+# OS generated files
+.DS_Store
+
+# Local development scripts
 copy-to-vault.sh
+
+# Vault specific
+.obsidian/
+
+# Local env files
+.env
