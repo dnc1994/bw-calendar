@@ -2,15 +2,18 @@
 
 Visualize your logged bowel movement events in an iOS-style calendar view within Obsidian.
 
-<img src="assets/calendar_view.jpg" width="400" alt="Bowel Movement Calendar View">
-
 ## Features
 
-- **Wall Calendar View**: Highlights days with logged events.
+- **Privacy & Data Ownership**: You have ultimate control over your data. All logs are stored in simple markdown files within your vault.
+- **Zero Intrusiveness**: This plugin only reads from the folder you specify and does not modify your existing notes or structure.
+- **Ultimate Flexibility**: Since logs are plain text, you can use, move, or export your data however you wish, independent of this plugin.
+- **Wall Calendar View**: Highlights days with logged events for easy tracking.
 - **Event Details**: Click a day to see times and notes for all events on that day.
 - **iOS Inspired UI**: Clean design that respects Obsidian's light and dark themes.
 - **Live Updates**: The calendar refreshes automatically when your log files change.
 - **Easy Navigation**: Quickly browse months or jump to "Today".
+
+<img src="assets/calendar_view.jpg" width="400" alt="Bowel Movement Calendar View">
 
 ## How to Log
 
@@ -39,7 +42,10 @@ You can use any automated way to append these logs to your daily files.
 ## Installation
 
 ### From Community Plugins
-Search for "Bowel Movement Calendar" in the Obsidian community plugin list (Submission pending).
+Search for "Bowel Movement Calendar" in the Obsidian community plugin list.
+
+> [!NOTE]
+> **Submission Pending**: This plugin is currently being prepared for submission to the official community plugin gallery.
 
 ### Manual Installation
 1. Download `main.js`, `manifest.json`, and `styles.css` from the latest release.
