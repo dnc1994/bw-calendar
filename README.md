@@ -2,7 +2,7 @@
 
 Visualize your logged bowel movement events in an iOS-style calendar view within Obsidian.
 
-![Bowel Movement Calendar View](assets/calendar_view.jpg)
+<img src="assets/calendar_view.jpg" width="400" alt="Bowel Movement Calendar View">
 
 ## Features
 
@@ -28,7 +28,7 @@ notes: "Feeling good."
 You can use any automated way to append these logs to your daily files. 
 - **iOS/macOS**: We highly recommend using **Apple Shortcuts** to quickly log events from your phone or Apple Watch.
 
-![Apple Shortcut Example](assets/shortcut_example.jpg)
+<img src="assets/shortcut_example.jpg" width="400" alt="Apple Shortcut Example">
 
 ## How to View
 
