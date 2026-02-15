@@ -1,0 +1,147 @@
+.bw-calendar-container {
+    padding: 10px;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.bw-calendar-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.bw-calendar-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.bw-nav-buttons {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.bw-nav-buttons button {
+    cursor: pointer;
+}
+
+.bw-calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+}
+
+.bw-weekday {
+    text-align: center;
+    font-size: 0.8em;
+    font-weight: bold;
+    color: var(--text-muted);
+    padding-bottom: 5px;
+}
+
+.bw-day {
+    aspect-ratio: 1/1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 50%;
+    position: relative;
+    font-size: 0.9em;
+    border: 2px solid transparent;
+    transition: all 0.2s ease;
+}
+
+.bw-day:hover {
+    background-color: var(--background-modifier-hover);
+}
+
+.bw-day.empty {
+    cursor: default;
+}
+
+.bw-day.empty:hover {
+    background-color: transparent;
+}
+
+/* Day with events: Outlined circle */
+.bw-day.has-events {
+    border-color: var(--interactive-accent);
+    color: var(--text-normal);
+}
+
+/* Today: Solid highlight */
+.bw-day.is-today {
+    background-color: var(--text-accent);
+    color: var(--text-on-accent);
+    font-weight: bold;
+}
+
+/* Today with events: Solid highlight with distinct border */
+.bw-day.is-today.has-events {
+    background-color: var(--text-accent);
+    color: var(--text-on-accent);
+    border-color: var(--text-normal);
+}
+
+/* Selected day: Clearer outline */
+.bw-day.selected {
+    box-shadow: 0 0 0 2px var(--background-primary), 0 0 0 4px var(--text-accent);
+}
+
+.bw-day.is-future {
+    opacity: 0.3;
+    cursor: default;
+}
+
+.bw-day-number {
+    z-index: 1;
+    text-decoration: none !important;
+}
+
+.bw-event-count {
+    position: absolute;
+    bottom: 2px;
+    font-size: 0.65em;
+    font-weight: bold;
+    text-decoration: none !important;
+    color: var(--text-muted);
+}
+
+.bw-day.has-events .bw-event-count {
+    color: var(--interactive-accent);
+}
+
+.bw-day.is-today .bw-event-count {
+    color: var(--text-on-accent);
+}
+
+.bw-day-details {
+    padding: 15px;
+    background-color: var(--background-secondary);
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+}
+
+.bw-event-item {
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid var(--background-modifier-border);
+}
+
+.bw-event-time {
+    font-weight: bold;
+    font-size: 0.85em;
+    color: var(--text-accent);
+}
+
+.bw-event-notes {
+    font-size: 0.9em;
+    margin-top: 2px;
+}
